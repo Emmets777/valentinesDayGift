@@ -1,0 +1,89 @@
+.container-girassois {
+  padding: 16px;
+  font-family: sans-serif;
+}
+
+#campo {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    #87CEEB 0%,   /* céu */
+    #87CEEB 55%,  /* céu até 55% */
+    #5a9e3a 55%,  /* chão começa exatamente em 55% */
+    #4a8e2a 100%  /* chão mais escuro embaixo */
+  );
+  border-radius: 12px;
+}
+
+.girassol {
+  position: absolute;
+  transform-origin: bottom center;
+  opacity: 0;
+}
+
+.caule {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4a7c2f;
+  border-radius: 3px;
+}
+
+.folha {
+  position: absolute;
+  border-radius: 50% 0;
+  background: #4a7c2f;
+}
+
+.centro {
+  border-radius: 50%;
+  background: #5c3317;
+  position: absolute;
+  z-index: 2;
+}
+
+#btn {
+  display: block;
+  margin: 16px auto 0;
+  padding: 8px 24px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  transition: background 0.2s;
+}
+
+#btn:disabled {
+  cursor: not-allowed;
+  background: #eaeaea;
+}
+
+#contador {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.sol {
+  position: absolute;
+  top: 18px;
+  right: 40px;
+  width: 52px;
+  height: 52px;
+  background: #FFD700;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px rgba(255, 215, 0, 0.25);
+}
+
+.nuvem {
+  position: absolute;
+  background: white;
+  border-radius: 50px;
+  opacity: 0.8;
+}

@@ -1,0 +1,28 @@
+.timerWrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.days {
+  background: hsl(303, 90%, 8%);
+  border-radius: 8px;
+  padding: 12px 16px;
+  min-width: 70px;
+}
+
+.numbers {
+  font-size: 28px;
+  font-weight: bold;
+  color: hsl(0, 0%, 0%);
+}
+
+.label {
+  font-size: 15px;
+  color: hsl(0, 0%, 80%);
+}
